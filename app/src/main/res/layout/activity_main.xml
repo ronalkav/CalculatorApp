@@ -6,13 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/num1ET"
+        android:layout_width="139dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/num2ET"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <EditText
+        android:id="@+id/num2ET"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/resultTV"
+        android:layout_width="87dp"
+        android:layout_height="39dp"
+        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <Button
+        android:id="@+id/findSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="findSum"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1ET"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <Button
+        android:id="@+id/findDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:onClick="findDifference"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/findSum"
+        app:layout_constraintTop_toBottomOf="@+id/num2ET"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <Button
+        android:id="@+id/findProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:onClick="findProduct"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/findQuotient"
+        app:layout_constraintTop_toBottomOf="@+id/findSum" />
+
+    <Button
+        android:id="@+id/findQuotient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="findQuotient"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findDifference"
+        tools:layout_editor_absoluteX="268dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
