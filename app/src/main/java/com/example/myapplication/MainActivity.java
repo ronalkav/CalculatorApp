@@ -62,5 +62,20 @@ public class MainActivity extends AppCompatActivity {
         numberQuotientTV.setText("" + quotient);
     }
 
+//    public void changeColor(View view){
+//
+//    }
+
+    public void findSquareRoot(View view){
+        EditText number1ET = findViewById(R.id.num1ET);
+        TextView numberRootTV = findViewById(R.id.resultTV);
+
+        int num1 = Integer.parseInt((number1ET.getText().toString()));
+        int root = (int) Math.sqrt(num1);
+
+        numberRootTV.setText("" + root);
+    }
+
+    //ideas: push out notification if they put in the wrong info, more fxns, change color of buttons, distance formula, etc., use gradient, different fonts.
 
 }
