@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#03A9F4"
+    android:background="@drawable/gradient_button"
     tools:context=".MainActivity">
 
     <EditText
@@ -51,9 +51,9 @@
 
     <Button
         android:id="@+id/findSum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#813636"
+        android:layout_width="116dp"
+        android:layout_height="58dp"
+        android:background="@drawable/gradient_button"
         android:fontFamily="sans-serif-black"
         android:hint="enter a num"
         android:onClick="findSum"
@@ -66,8 +66,9 @@
 
     <Button
         android:id="@+id/findDifference"
-        android:layout_width="116dp"
-        android:layout_height="58dp"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:background="@drawable/gradient_button"
         android:onClick="findDifference"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,8 +80,8 @@
 
     <Button
         android:id="@+id/findProduct"
-        android:layout_width="112dp"
-        android:layout_height="59dp"
+        android:layout_width="116dp"
+        android:layout_height="58dp"
         android:onClick="findProduct"
         android:text="*"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,8 +93,8 @@
 
     <Button
         android:id="@+id/findQuotient"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="116dp"
+        android:layout_height="58dp"
         android:onClick="findQuotient"
         android:text="/"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,15 +105,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="82dp"
-        android:layout_height="81dp"
+        android:layout_width="116dp"
+        android:layout_height="58dp"
         android:onClick="findSquareRoot"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.986"
-        app:srcCompat="@drawable/images" />
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/images"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
